@@ -2,8 +2,8 @@
 
 args <- commandArgs() 
 
-nnode <- args[6]
-distMatrix <- args[7]
+distMatrix <- args[6]
+nnode <- as.numeric(args[7])
 
 #read the file into a matrix
 mi <- matrix(scan(distMatrix), nnode, nnode+1, byrow=TRUE)
