@@ -17,12 +17,16 @@ mi <- mi[, -1]
 #Extract the upper triangular part in to a vector
 upp <- mi[upper.tri(mi)]
 
+#get the max of distance
+nbins <- max(upp)
+
 pdf(outfile)
 
 #draw the histgram
-hist(upp, 
-	right=FALSE, # intervals closed on the left
-	main="Histogram of Distance", # the main title
-	xlab="Distance")	# x-axis label
+hist(upp,
+	breaks = nbins,	# number of bins 
+	right = FALSE, # intervals closed on the left
+	main = "Histogram of Distance", # the main title
+	xlab = "Distance")	# x-axis label
 
 dev.off()
