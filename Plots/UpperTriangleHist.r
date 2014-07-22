@@ -13,7 +13,7 @@ outfile <- args[7]
 
 #nnode <- as.numeric(args[8])	#this parameter is not necessary if using read.table
 
-#read the file into a matrix
+#read the file into a data frame
 #mi <- matrix(scan(distMatrix), nnode, nnode+1, byrow=TRUE)	#every element has to be a real (use scan)
 mi <- read.table(distMatrix)
 
