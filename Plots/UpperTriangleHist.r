@@ -1,4 +1,10 @@
 ##UpperTriangleHist.r
+##Date:	07/21/2014
+##Function:
+##	Read the distance matrix and plot the histogram of distance
+##Command-line Parameters:
+##	1. path of the distance matrix
+##	2. paht of output histogram
 
 args <- commandArgs() 
 
@@ -22,7 +28,7 @@ nbins <- max(upp)
 
 pdf(outfile)
 
-#draw the histgram
+#draw the histogram
 hist(upp,
 	breaks = nbins,	# number of bins 
 	right = FALSE, # intervals closed on the left
