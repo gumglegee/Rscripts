@@ -4,8 +4,6 @@ Rscripts
 R scripts
 
 How to run R scripts with command line parameters: <br>
-<pre>
-<code>
+<pre><code>
 Rscript  *.r  parameter-list
-</code>
-</pre>
+</code></pre>
